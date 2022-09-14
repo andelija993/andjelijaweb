@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+#container {
+    padding: 15px;
+}
+#introduction {
+    background-color: #788f57;
+    color: #fefffe;
+    padding: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+.name {
+    text-align: center;
+    margin: 0px;
+    font-size: 60px;
+    font-weight: 200;
+    letter-spacing: 8px;
+}
+.role {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: lighter;
+}
+.section {
+    line-height: 35px;
+    padding-bottom: 30px;
+}
+.section-name {
+    text-transform: uppercase;
+    font-family: 'Pressroom';
+    font-weight: 1700;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.wrap{
+    display:flex;
+    padding: 10px;
+    margin: 0 auto;    
+}
+#left-container, #right-container {
+    font-family: 'Segoe UI';
+    font-size: 25px;
+    width: 45%;
+    /*float: left;*/
+}
+#left-container{
+    text-align: right;
+}
+#right-container {
+    text-align: left;
+}
+/*Progress bars*/
+progress {
+    height: 11px;
+    margin-bottom: 10px;
+    width: 25%;
+    background-color: #788f57;
+}
+/* For Chrome or Safari */
+progress::-webkit-progress-bar {
+    background-color: #cfcdce;
+}
+progress::-webkit-progress-value {
+    background-color: #788f57 !important;
+}
+/* For IE10 */
+progress {
+    background-color: #cfcdce;
+}
+ul {
+    padding-bottom: 25px;
+    line-height: 30px;
+    list-style-type: square;
+}
+.center {
+    width: 10%;
+    position: relative;
+    width: 50px;
+}
+.one {
+    float: left;
+    padding: 20px;
+}
+.line {
+    position: relative;
+    border-left: 3px solid #cfcdce;
+    height: 1200px;
+    width: 10%;
+    margin-top: 37px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.hr-circle-wrap {
+    position: absolute;
+    width: 40px;
+}
+.circle {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background: #788f57;
+    border-radius: 50%;
+    z-index: 1;
+}
+/*Circles*/
+#circle2{
+    bottom: 1183px;
+    left: 15px;
+}
+/*education*/
+#circle3{
+    bottom: 788px;
+    left: 15px;
+}
+#circle4{
+    bottom: 883px;
+    left: 15px;
+}
+#circle5{
+    bottom: 130px;
+    left: 15px;
+}
+#circle6{
+    bottom: 498px;
+    left: 15px;
+}
+hr {
+    position: absolute;
+    border-top: 2px solid #d1d8c9ce;
+    width: 55px;
+    right: 10px;
+    bottom: 1180px;
+}
+/*HR-lines*/
+/*summary contact*/
+#second{
+    right: -30px;
+    bottom: 1180px;
+    width: 97px;
+}
+/*certification*/
+#third{
+    right: 12px;
+    bottom: 128px;
+}
+/*relevant skills*/
+#fourth{
+    right: 12px;
+    bottom: 495px;
+}
+/*professional experience*/
+#fifth{
+    right: -30px;
+    bottom: 880px;
+}
+/*education*/
+#sixth{
+    right: 12px;
+    bottom: 785px;
+}
