@@ -1,16 +1,19 @@
 * {
     box-sizing: border-box;
 }
+
 #container {
     padding: 15px;
 }
+
 #introduction {
     background-color: #788f57;
     color: #fefffe;
     padding: 40px;
     font-family: 'Times New Roman', Times, serif;
-    
+    width: 100%;
 }
+
 .name {
     text-align: center;
     margin: 0px;
@@ -18,16 +21,19 @@
     font-weight: 200;
     letter-spacing: 8px;
 }
+
 .role {
     text-align: center;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: lighter;
 }
+
 .section {
     line-height: 35px;
     padding-bottom: 30px;
 }
+
 .section-name {
     text-transform: uppercase;
     font-family: 'Pressroom';
@@ -35,55 +41,62 @@
     font-size: 30px;
     letter-spacing: 2px;
 }
-.wrap{
-    display:flex;
+
+.wrap {
+    display: flex;
     padding: 10px;
-    margin: 0 auto;    
+    margin: 0 auto;
 }
-#left-container, #right-container {
+
+#left-container,
+#right-container {
     font-family: 'Segoe UI';
     font-size: 25px;
     width: 45%;
-    /*float: left;*/
 }
-#left-container{
+
+#left-container {
     text-align: right;
 }
+
 #right-container {
     text-align: left;
 }
-/*Progress bars*/
+
+/*Progress bar*/
 progress {
     height: 11px;
     margin-bottom: 10px;
     width: 25%;
     background-color: #788f57;
 }
-/* For Chrome or Safari */
 progress::-webkit-progress-bar {
     background-color: #cfcdce;
 }
 progress::-webkit-progress-value {
     background-color: #788f57 !important;
 }
-/* For IE10 */
 progress {
     background-color: #cfcdce;
 }
+
 ul {
     padding-bottom: 25px;
     line-height: 30px;
     list-style-type: square;
 }
+
 .center {
     width: 10%;
     position: relative;
     width: 50px;
 }
+
 .one {
     float: left;
     padding: 20px;
 }
+
 .line {
     position: relative;
     border-left: 3px solid #cfcdce;
@@ -93,10 +106,13 @@ ul {
     margin-left: 20px;
     margin-right: 20px;
 }
+
+/*Circles and lines*/
 .hr-circle-wrap {
     position: absolute;
     width: 40px;
 }
+
 .circle {
     position: absolute;
     width: 13px;
@@ -105,28 +121,58 @@ ul {
     border-radius: 50%;
     z-index: 1;
 }
-/*Circles*/
-#circle2{
+
+#summary-contact-circle {
     bottom: 1183px;
     left: 15px;
 }
-/*education*/
-#circle3{
+
+#summary-contact-line {
+    right: -30px;
+    bottom: 1180px;
+    width: 97px;
+}
+
+#education-circle {
     bottom: 788px;
     left: 15px;
 }
-#circle4{
-    bottom: 883px;
+
+#education-line {
+    right: 12px;
+    bottom: 785px;
+}
+
+#professional-experience-circle {
+    bottom: 880px;
     left: 15px;
 }
-#circle5{
+
+#professional-experience-line {
+    right: -30px;
+    bottom: 877px;
+}
+
+#certification-circle {
     bottom: 130px;
     left: 15px;
 }
-#circle6{
+
+#certification-line {
+    right: 12px;
+    bottom: 128px;
+}
+
+#relevant-skills-circle {
     bottom: 498px;
     left: 15px;
 }
+
+#relevant-skills-line {
+    right: 12px;
+    bottom: 495px;
+}
+
 hr {
     position: absolute;
     border-top: 2px solid #d1d8c9ce;
@@ -134,30 +180,282 @@ hr {
     right: 10px;
     bottom: 1180px;
 }
-/*HR-lines*/
-/*summary contact*/
-#second{
-    right: -30px;
-    bottom: 1180px;
-    width: 97px;
+
+/*ALL screen print */
+@media screen and (min-width: 1935px) {
+    #education-circle {
+        bottom: 895px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 892px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 599px;
+    }
+    #relevant-skills-circle {
+        bottom: 602px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 233px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 230px;
+    }
 }
-/*certification*/
-#third{
-    right: 12px;
-    bottom: 128px;
+@media screen and (min-width: 1780px) {
+    #education-circle {
+        bottom: 859px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 855px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 565px;
+    }
+    #relevant-skills-circle {
+        bottom: 568px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 198px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 195px;
+    }
 }
-/*relevant skills*/
-#fourth{
-    right: 12px;
-    bottom: 495px;
+
+/* nesto ne radi
+@media screen and (min-width: 1521px) {
+    #education-circle {
+        bottom: 822px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 820px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 530px;
+    }
+    #relevant-skills-circle {
+        bottom: 532px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 163px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 160px;
+    }
+}*/
+
+@media screen and (max-width: 1230px) {
+    #education-circle {
+        bottom: 750px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 748px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 460px;
+    }
+    #relevant-skills-circle {
+        bottom: 462px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 93px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 91px;
+    }
 }
-/*professional experience*/
-#fifth{
-    right: -30px;
-    bottom: 880px;
+@media screen and (max-width: 1090px) {
+    #education-circle {
+        bottom: 720px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 718px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 425px;
+    }
+    #relevant-skills-circle {
+        bottom: 428px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 58px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 56px;
+    }
 }
-/*education*/
-#sixth{
-    right: 12px;
-    bottom: 785px;
+@media screen and (max-width: 1010px) {
+    #professional-experience-circle {
+        bottom: 1040px;
+        left: 15px;
+    }
+    #professional-experience-line {
+        right: -30px;
+        bottom: 1037px;
+    }
+    #summary-contact-circle {
+        bottom: 1383px;
+        left: 15px;
+    }
+    #summary-contact-line {
+        right: -30px;
+        bottom: 1380px;
+        width: 97px;
+    }
+    #education-circle {
+        bottom: 880px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 878px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 555px;
+    }
+    #relevant-skills-circle {
+        bottom: 558px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 150px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 146px;
+    }
+.line {
+    height: 1400px;
+}
+}
+@media screen and (max-width: 965px) {
+    #education-circle {
+        bottom: 850px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 846px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 490px;
+    }
+    #relevant-skills-circle {
+        bottom: 492px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 87px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 83px;
+    }
+}
+@media screen and (max-width: 855px) {
+    #summary-contact-circle {
+        bottom: 1583px;
+        left: 15px;
+    }
+    #summary-contact-line {
+        right: -30px;
+        bottom: 1580px;
+        width: 97px;
+    }
+    #professional-experience-circle {
+        bottom: 1200px;
+        left: 15px;
+    }
+    #professional-experience-line {
+        right: -30px;
+        bottom: 1198px;
+    }
+    #education-circle {
+        bottom: 1015px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 1012px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 608px;
+    }
+    #relevant-skills-circle {
+        bottom: 612px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 138px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 135px;
+    }
+    .line {
+        height: 1600px;
+    }
+}
+@media screen and (max-width:845px) {
+    #center{
+        display: none;
+    }
+    .wrap {
+        flex-direction: column;
+        
+    }
+    #left-container, #right-container {
+        width: 100%;
+        text-align: left;
+    }
+    }
+@media screen and (max-width: 750px) {
+    #introduction {
+        width: 100%;
+    }
 }
