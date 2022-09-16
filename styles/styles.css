@@ -48,8 +48,7 @@
     margin: 0 auto;
 }
 
-#left-container,
-#right-container {
+#left-container,#right-container {
     font-family: 'Segoe UI';
     font-size: 25px;
     width: 45%;
@@ -182,31 +181,59 @@ hr {
 }
 
 /*ALL screen print */
-@media screen and (min-width: 1935px) {
+/* nesto ne radi*/
+@media screen and (min-width: 1521px) {
     #education-circle {
-        bottom: 895px;
+        bottom: 822px;
         left: 15px;
     }
     #education-line {
         right: 12px;
-        bottom: 892px;
+        bottom: 820px;
     }
     #relevant-skills-line {
         right: 12px;
-        bottom: 599px;
+        bottom: 530px;
     }
     #relevant-skills-circle {
-        bottom: 602px;
+        bottom: 532px;
         left: 15px;
     }
     #certification-circle {
-        bottom: 233px;
+        bottom: 163px;
         left: 15px;
     }
     
     #certification-line {
         right: 12px;
-        bottom: 230px;
+        bottom: 160px;
+    }
+}
+@media screen and (min-width: 1762px) {
+    #education-circle {
+        bottom: 859px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 855px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 565px;
+    }
+    #relevant-skills-circle {
+        bottom: 568px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 198px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 195px;
     }
 }
 @media screen and (min-width: 1780px) {
@@ -236,36 +263,114 @@ hr {
         bottom: 195px;
     }
 }
-
-/* nesto ne radi
-@media screen and (min-width: 1521px) {
+@media screen and (min-width: 1935px) {
     #education-circle {
-        bottom: 822px;
+        bottom: 895px;
         left: 15px;
     }
     #education-line {
         right: 12px;
-        bottom: 820px;
+        bottom: 892px;
     }
     #relevant-skills-line {
         right: 12px;
-        bottom: 530px;
+        bottom: 599px;
     }
     #relevant-skills-circle {
-        bottom: 532px;
+        bottom: 602px;
         left: 15px;
     }
     #certification-circle {
-        bottom: 163px;
+        bottom: 233px;
         left: 15px;
     }
     
     #certification-line {
         right: 12px;
-        bottom: 160px;
+        bottom: 230px;
     }
-}*/
-
+}
+@media screen and (min-width: 2831px) {
+    #education-circle {
+        bottom: 928px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 925px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 633px;
+    }
+    #relevant-skills-circle {
+        bottom: 636px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 273px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 270px;
+    }
+}
+@media screen and (min-width: 5390px) {
+    #education-circle {
+        bottom: 963px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 960px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 673px;
+    }
+    #relevant-skills-circle {
+        bottom: 675px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 300px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 295px;
+    }
+}
+@media screen and (min-width: 1520px) and (max-width:1534px) {
+    #education-circle {
+        bottom: 790px;
+        left: 15px;
+    }
+    #education-line {
+        right: 12px;
+        bottom: 789px;
+    }
+    #relevant-skills-line {
+        right: 12px;
+        bottom: 500px;
+    }
+    #relevant-skills-circle {
+        bottom: 502px;
+        left: 15px;
+    }
+    #certification-circle {
+        bottom: 131px;
+        left: 15px;
+    }
+    
+    #certification-line {
+        right: 12px;
+        bottom: 129px;
+    }
+}
 @media screen and (max-width: 1230px) {
     #education-circle {
         bottom: 750px;
@@ -453,7 +558,36 @@ hr {
         width: 100%;
         text-align: left;
     }
-    }
+    /*Gore html dole da razvucem progres bar i pored da bude broj posto, npr 90 10 ili nesto bolje*/
+  .skill{
+    display: block;
+    width: 100%;
+  }
+    progress {
+    width: 90%;
+  }
+  .percentage {
+    width: 10%;
+  }
+}
+@media screen and (max-width:649px) {
+   
+    /*Gore html dole da razvucem progres bar i pored da bude broj posto, npr 90 10 ili nesto bolje*/
+    progress {
+    width: 80%;
+  }
+  .percentage {
+    width: 10%;
+  }
+}
+
+@media screen and (max-width:375px) {
+   
+    progress {
+    width: 70%;
+  }
+
+}
 @media screen and (max-width: 750px) {
     #introduction {
         width: 100%;
